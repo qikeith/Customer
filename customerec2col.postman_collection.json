@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "c8f6b2f8-7718-42e5-b6b9-8ed17cb56d5a",
+		"name": "customerec2col",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1126410"
+	},
+	"item": [
+		{
+			"name": "get customer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://52.14.25.43:8080/customers",
+					"protocol": "http",
+					"host": [
+						"52",
+						"14",
+						"25",
+						"43"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get customer by name",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://52.14.25.43:8080/customers/keith",
+					"protocol": "http",
+					"host": [
+						"52",
+						"14",
+						"25",
+						"43"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"keith"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add customer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://52.14.25.43:8080/customers?name=keith",
+					"protocol": "http",
+					"host": [
+						"52",
+						"14",
+						"25",
+						"43"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "keith"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update customer by name",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://52.14.25.43:8080/customers/keith?newName=keithqi",
+					"protocol": "http",
+					"host": [
+						"52",
+						"14",
+						"25",
+						"43"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"keith"
+					],
+					"query": [
+						{
+							"key": "newName",
+							"value": "keithqi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete customer by name",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://52.14.25.43:8080/customers/keithqi",
+					"protocol": "http",
+					"host": [
+						"52",
+						"14",
+						"25",
+						"43"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"keithqi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
